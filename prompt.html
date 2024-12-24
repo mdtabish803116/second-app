@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt User</title>
+</head>
+<body>
+    
+  <script>
+
+    let input;
+  setTimeout(() => {
+     input =   prompt("Enter a number:")
+     } , 5000)
+       
+
+     function print(){
+          console.log("Hello world")
+     }
+
+ let id = setInterval( () => {
+     input--
+
+     if(input === 0){
+     clearInterval(id)
+     }
+  } , 1000)
+
+  </script>
+</body>
+</html>
